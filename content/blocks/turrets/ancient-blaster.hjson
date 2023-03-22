@@ -1,0 +1,239 @@
+//type: BurstTurret
+name: Ancient Blaster
+description: A small but sturdy turret.
+health: 2400
+size: 1
+reloadTime: 24
+range: 150
+ammoEjectBack: 2.1
+//ammoUseEffect: pulverizeRed
+coolantMultiplier: 4
+cooldown: 0.01
+maxAmmo: 40
+rotateSpeed: 13
+shootSound: blasterShot
+outlineColor: 966102
+//targetAir: false
+//targetGround: false
+ammoTypes: {
+  lead: {
+    type: BasicBulletType
+    speed: 8
+    damage: 15
+	lifetime: 25
+    width: 3
+    height: 6
+	frontColor: 8a73c6
+	backColor: c878a8
+    shootEffect: shootSmall
+    smokeEffect: none
+	hitEffect: hitBulletSmall
+	despawnEffect: shootSmallSmoke
+    ammoMultiplier: 4
+	pierce: false
+	sprite: shell
+	shrinkY: 0.12
+  }
+  ancient-scrap: {
+    type: BasicBulletType
+    speed: 11
+    damage: 20
+	lifetime: 30
+    width: 2
+    height: 9
+	inaccuracy: 9
+	frontColor: 69501c
+	backColor: ceb404
+    shootEffect: shootSmall
+    smokeEffect: lancerLaserShoot
+	hitEffect: shootBig2
+	despawnEffect: shootSmall
+    ammoMultiplier: 2
+    reloadMultiplier: 0.7
+	pierce: false
+	sprite: diamond-ore-diamondbullet
+	shrinkY: 0.5
+	fragBullets: 4
+	knockback: 2
+	fragVelocityMin: 2
+	fragVelocityMax: 4
+	fragBullet: {
+      type: BasicBulletType
+      damage: 10
+	  lifetime: 10
+      width: 1
+      height: 12
+      collidesTiles: false
+	  frontColor: 69501c
+	  backColor: ce8404
+      shootEffect: none
+      smokeEffect: none
+	  hitEffect: none
+	  despawnEffect: none
+	  pierce: false
+	  sprite: diamond-ore-diamondshell
+	  shrinkY: 0.875
+	  knockback: 0.9604
+    }
+  }
+  silicon: {
+    type: BasicBulletType
+    speed: 12
+    drag: 0.03
+    damage: 15
+	lifetime: 30
+    width: 3
+    height: 6
+	frontColor: 888888
+	backColor: bbbbbb
+	homingPower: 0.7
+	homingRange: 20
+    shootEffect: shootSmall
+    smokeEffect: none
+	hitEffect: hitBulletSmall
+	despawnEffect: shootSmallSmoke
+    ammoMultiplier: 5
+	reloadMultiplier: 1.06
+	pierce: false
+	sprite: shell
+	shrinkY: 0.12
+  }
+  plastanium: {
+    type: BasicBulletType
+    speed: 8
+    damage: 15
+	lifetime: 25
+    width: 3
+    height: 6
+	frontColor: 66ff66
+	backColor: b8ff00
+    shootEffect: shootSmall
+    smokeEffect: none
+	hitEffect: hitBulletSmall
+	despawnEffect: shootSmallSmoke
+    ammoMultiplier: 4
+	reloadMultiplier: 0.6
+	pierce: false
+	sprite: shell
+	shrinkY: 0.12
+    splashDamage: 36
+    splashDamageRadius: 12
+  }
+  thorium: {
+    type: BasicBulletType
+    speed: 8
+    damage: 30
+	lifetime: 25
+    width: 3
+    height: 6
+	frontColor: fbbbeb
+	backColor: c878a8
+    shootEffect: shootBig
+    smokeEffect: none
+	hitEffect: hitBulletSmall
+	despawnEffect: shootSmallSmoke
+    ammoMultiplier: 2
+	reloadMultiplier: 0.8
+	pierce: false
+	knockback: 2
+	sprite: shell
+	shrinkY: 0.12
+  }
+  ancient-alloy: {
+    type: BasicBulletType
+    speed: 8
+    damage: 30
+	lifetime: 25
+    width: 4
+    height: 12
+	frontColor: f0985d
+	backColor: e2bb7f
+    shootEffect: shootBig2
+    smokeEffect: shootBig
+	hitEffect: hitBulletBig
+	despawnEffect: shootSmallSmoke
+    ammoMultiplier: 2
+	reloadMultiplier: 0.5
+	pierce: false
+	knockback: 2
+	sprite: shell
+	shrinkY: 0.12
+	lightningLength: 8
+	lightning: 2
+    splashDamage: 48
+    splashDamageRadius: 24
+  }
+  surge-alloy: {
+    type: BasicBulletType
+    speed: 10
+    damage: 10
+	lifetime: 22
+    width: 4
+    height: 10
+	frontColor: f0ee5d
+	backColor: e2eb7f
+    shootEffect: shootBig2
+    smokeEffect: none
+	hitEffect: hitBulletBig
+	despawnEffect: shootSmallSmoke
+    ammoMultiplier: 3
+	reloadMultiplier: 0.975
+	pierce: false
+	knockback: 0.6
+	sprite: shell
+	shrinkY: 0.12
+	lightningLength: 8
+	lightning: 2
+    splashDamage: 24
+    splashDamageRadius: 16
+  }
+  titanium: {
+    type: BasicBulletType
+    speed: 10
+    damage: 11
+	lifetime: 20
+    width: 3
+    height: 6
+	frontColor: 003d99
+	backColor: 66aaff
+    shootEffect: shootBig
+    smokeEffect: none
+	hitEffect: freezing
+	despawnEffect: shootSmallSmoke
+    ammoMultiplier: 4
+	reloadMultiplier: 1.8
+	pierce: true
+	pierceBuilding: true
+	sprite: diamond-ore-diamondbullet
+	shrinkY: 0.12
+  }
+  pyratite: {
+    type: BasicBulletType
+    speed: 6
+    damage: 6
+	lifetime: 35
+    width: 3
+    height: 6
+	frontColor: 003d99
+	backColor: 66aaff
+    shootEffect: shootBig
+    smokeEffect: none
+	hitEffect: burning
+	despawnEffect: shootSmallSmoke
+    ammoMultiplier: 3
+	reloadMultiplier: 1.8
+	pierce: true
+	status: burning
+	statusDuration: 300
+	sprite: diamond-ore-diamondbullet
+	shrinkY: 0.12
+  }
+}
+requirements: [
+  lead/30
+  silicon/40
+  titanium/32
+  ancient-alloy/12
+]
+category: turret
+research: ancient-forge

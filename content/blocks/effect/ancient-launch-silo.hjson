@@ -1,0 +1,26 @@
+name: Ancient Launch Silo
+description: Launches massive batches of items to selected sectors.
+//type: LaunchPad
+health: 12500
+buildVisibility: campaignOnly
+//podRegion: ancient-launch-silo-pod
+lightColor: eeeeaa
+podEngineColor: aaddff
+itemCapacity: 3000
+size: 5
+launchTime: 3600
+buildCostMultiplier: 0.65
+researchCostMultiplier: 2
+consumes: {
+  power: 25
+}
+requirements: [
+  diamond/400
+  titanium/800
+  silicon/400
+  thorium/1200
+  phase-fabric/400
+  ancient-alloy/400
+]
+category: effect
+research: ancient-repository

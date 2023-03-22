@@ -1,0 +1,17 @@
+//type: Conveyor
+health: 1200
+name: Spore Conveyor
+solid: true
+update: true
+floating: true
+//placeableLiquid: true
+description: Transports items forward.
+details: An organic way of transporting items.
+requirements: [
+  plastanium/3
+  dark-spore-pod/1
+]
+category: distribution
+speed: 0.125
+displayedSpeed: 7.5
+research: armored-conveyor

@@ -1,0 +1,17 @@
+localizedName: Ancient Metal Wall
+description: Protects structures from enemy projectiles, periodically releasing electric arcs upon contact.
+type: Wall
+health: 2000
+size: 1
+lightningChance: 0.3
+lightningDamage: 60
+lightningLength: 20
+lightningColor: DECF5B
+absorbLasers: true
+buildCostMultiplier: 0.55
+requirements: [
+  ancient-alloy/10
+  cryogem/1
+]
+category: defense
+research: ancient-refinery

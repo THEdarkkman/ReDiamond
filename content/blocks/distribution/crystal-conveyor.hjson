@@ -1,0 +1,15 @@
+//type: Conveyor
+health: 600
+name: Crystal Conveyor
+solid: true
+description: Transports items forward.
+requirements: [
+  graphite/3
+  silicon/2
+  diamond/1
+]
+category: distribution
+speed: 0.25
+layer2: power
+displayedSpeed: 15.0
+research: armored-conveyor

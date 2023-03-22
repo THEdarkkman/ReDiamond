@@ -1,0 +1,32 @@
+name: Spore Cluster
+description: Produces spore pods passively.
+//type: Cultivator
+health: 480
+breakSound: sporesplat
+size: 1
+itemCapacity: 1
+outputItem: spore-pod/1
+alwaysReplace: true
+baseExplosiveness: 1
+hasItems: true
+layer: power
+expanded: true
+recurrence: 153
+//hasPower: true
+updateEffect: wet
+updateEffectChance: 0.01
+craftTime: 60
+ambientSound: wave
+ambientSoundVolume: 0.25
+loopSound: tractorbeam
+loopSoundVolume: 0.25
+attribute: spores
+buildVisibility: editorOnly
+//consumes: {
+  //power: 0.1
+//}
+requirements: [
+  spore-pod/8
+]
+category: production
+//research: oil-extractor

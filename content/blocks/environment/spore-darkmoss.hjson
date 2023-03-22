@@ -1,0 +1,13 @@
+type: Floor
+name: Spore Moss Dark
+variants: 6
+dragMultiplier: 1.5
+speedMultiplier: 0.925
+walkEffect: none
+wall: darkmossrocks
+decoration: spore-cluster-dark
+attributes: {
+	spores: 0.45
+	water: -0.25
+	oil: 1.3
+	}

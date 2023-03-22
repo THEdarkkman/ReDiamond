@@ -1,0 +1,19 @@
+type: floor
+name: Corrupted Water
+variants: 6
+dragMultiplier: 2.5
+speedMultiplier: 0.25
+status: corroded
+statusDuration: 150
+walkEffect: sapped
+drownUpdateEffect: melting
+cacheLayer: water
+walkSound: sporeWaterWalk
+isLiquid: true
+liquidDrop: corrupt-water
+blendGroup: water
+edge: spore-water-edge
+attributes: {
+	spores: 0.75
+	oil: 4
+	}

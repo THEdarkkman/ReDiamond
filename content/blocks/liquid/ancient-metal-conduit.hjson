@@ -1,0 +1,17 @@
+type: ArmoredConduit
+health: 1500
+name: Ancient Metal Conduit
+solid: true
+floating: true
+liquidCapacity: 20
+liquidPressure: 2
+buildCostMultiplier: 0.5
+description: Moves liquids forward. Does not accept input from the sides. Does not leak.
+requirements: [
+  metaglass/4
+  graphite/4
+  silicon/1
+  ancient-alloy/2
+]
+category: liquid
+research: ancient-metal-conveyor

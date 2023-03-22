@@ -1,0 +1,19 @@
+type: ArmoredConveyor
+health: 1800
+name: Ancient Metal Conveyor
+solid: true
+floating: true
+insulated: true
+absorbLasers: true
+buildCostMultiplier: 0.3
+description: Transports items forward. Does not accept inputs from the sides. Absorbs lasers and electric arcs. Blocks automatic power connections.
+requirements: [
+  phase-fabric/1
+  plastanium/2
+  cryogem/1
+  ancient-alloy/1
+]
+category: distribution
+speed: 0.2375
+displayedSpeed: 14.25
+research: ancient-solar-generator

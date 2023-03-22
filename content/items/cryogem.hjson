@@ -1,0 +1,8 @@
+name: Cryogem
+description: Used extensively as an easy transport method of cryofluid over immense distances.
+hardness: 5
+cost: 1
+color: aaffff
+research:{
+  parent: cryofluid
+}

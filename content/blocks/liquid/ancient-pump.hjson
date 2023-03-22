@@ -1,0 +1,23 @@
+name: Ancient Force Pump
+description: Pumps and output liquids.
+details: "A liquid extraction block built using [#e5b85e]ancient technology[]."
+type: Pump
+health: 1200
+size: 2
+liquidCapacity: 600
+hasPower: true
+drawLiquidLight: false
+pumpAmount: 1.25
+consumes: {
+  power: 2.5
+}
+requirements: [
+  lead/150
+  silicon/200
+  diamond/125
+  metaglass/300
+  phase-fabric/45
+  ancient-alloy/100
+]
+category: liquid
+research: ancient-oildrill

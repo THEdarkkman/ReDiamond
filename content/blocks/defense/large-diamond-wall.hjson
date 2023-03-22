@@ -1,0 +1,11 @@
+name: Large Diamond Wall
+description: Protects structures from enemy projectiles. Shatters when destroyed, damaging nearby enemies.
+//type: Wall
+health: 6000
+size: 2
+buildCostMultiplier: 2
+requirements: [
+  diamond/32
+]
+category: defense
+research: diamond-wall

@@ -1,0 +1,30 @@
+//type: LaserTurret
+name: Ancient Blade
+description: Small but durable, this short-range turret fires a powerful beam.
+health: 3600
+size: 1
+reloadTime: 4
+lightColor: ffffff
+shootDuration: 60
+range: 96
+ammoUseEffect: none
+coolantMultiplier: 2.5
+//coolantUsage: 0.1
+cooldown: 0.05
+rotateSpeed: 7
+shootSound: flame
+loopSound: medBeam3
+shootEffect: shootSmall
+smokeEffect: shootBig
+firingMoveFract: 0.666
+powerUse: 4
+recoilAmount: 0
+outlineIcon: false
+requirements: [
+  copper/10
+  silicon/20
+  titanium/16
+  ancient-alloy/35
+]
+category: turret
+research: ancient-shotgun

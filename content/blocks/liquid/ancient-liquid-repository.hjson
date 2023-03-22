@@ -1,0 +1,18 @@
+type: LiquidRouter
+name: Ancient Liquid Repository
+health: 18000
+size: 6
+description: Stores a very massive amount of liquids. Useful for creating buffers in situations with non-constant demand of materials or as a safeguard for cooling vital blocks.
+liquidCapacity: 15000
+hasLiquids: true
+//floating: true
+requirements: [
+  titanium/800
+  metaglass/1025
+  cryogem/125
+  ancient-alloy/125
+]
+category: liquid
+research: ancient-vault
+
+

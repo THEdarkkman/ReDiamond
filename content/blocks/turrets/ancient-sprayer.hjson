@@ -1,0 +1,394 @@
+//type: DoubleTurret
+name: Ancient Sprayer
+description: Rapidly fires bullets over long distances.
+health: 5400
+size: 3
+reloadTime: 4
+shots: 4
+//spread: 0.5
+xRand: 4
+range: 320
+ammoUseEffect: casing2
+coolantMultiplier: 4
+maxAmmo: 400
+rotateSpeed: 13
+inaccuracy: 7.5
+shootSound: shoot
+outlineColor: 966102
+//targetGround: false
+ammoTypes: {
+  lead: {
+    type: BasicBulletType
+    speed: 11
+    damage: 8
+	lifetime: 30
+    width: 2
+    height: 16
+	frontColor: 8a73c6
+	backColor: c878a8
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: shootBig2
+	despawnEffect: shootBig
+    ammoMultiplier: 4
+	pierce: false
+	knockback: 0.25
+	sprite: diamond-ore-diamondbullet
+	shrinkY: 0.125
+  }
+  graphite: {
+    type: BasicBulletType
+    speed: 11
+    damage: 16
+	lifetime: 30
+    width: 3
+    height: 24
+	frontColor: 6b77a1
+	backColor: 95abd9
+	inaccuracy: 3
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: shootBig2
+	despawnEffect: shootBig
+    ammoMultiplier: 2
+    reloadMultiplier: 0.8
+	pierce: false
+	knockback: 0.75
+	sprite: diamond-ore-diamondbullet
+	shrinkY: 0.875
+  }
+  thorium: {
+    type: BasicBulletType
+    speed: 9
+    damage: 24
+	lifetime: 36
+    width: 2
+    height: 20
+	frontColor: 8a73c6
+	backColor: c878a8
+	inaccuracy: 1.5
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: shootBig2
+	despawnEffect: shootBig
+    ammoMultiplier: 3
+    reloadMultiplier: 0.6
+	pierce: false
+	knockback: 1.05
+	sprite: diamond-ore-diamondbullet
+	shrinkY: 0.9
+  }
+  scrap: {
+    type: BasicBulletType
+    speed: 11
+    damage: 8
+	lifetime: 30
+    width: 1
+    height: 14
+	frontColor: 9b938b
+	backColor: 666666
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: shootBig2
+	despawnEffect: shootBig
+    ammoMultiplier: 4
+	pierce: false
+	status: corroded
+	statusDuration: 150
+	knockback: 0.49
+	sprite: bullet
+	shrinkY: 1
+  }
+  phase-fabric: {
+    type: BasicBulletType
+    speed: 10
+    damage: 4
+	lifetime: 42
+    width: 2
+    height: 4
+	inaccuracy: 3.5
+	frontColor: f19583
+	backColor: ffd595
+    shootEffect: hitFuse
+    smokeEffect: shootSmallSmoke
+	hitEffect: shootBig2
+	despawnEffect: shootBig
+    ammoMultiplier: 4
+	homingPower: 0.125
+	homingRange: 24
+	pierce: true
+	pierceBuilding: true
+	status: corroded
+	statusDuration: 600
+	sprite: shell
+	shrinkY: 0.25
+  }
+  pyratite: {
+    type: BasicBulletType
+    speed: 11
+    damage: 8
+	lifetime: 30
+    width: 1
+    height: 12
+	frontColor: ffaa5f
+	backColor: d37f47
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: shootBig2
+	despawnEffect: shootBig
+    ammoMultiplier: 4
+	pierce: false
+	status: burning
+	statusDuration: 240
+	sprite: shell
+	shrinkY: 1
+  }
+  cryogem: {
+    type: BasicBulletType
+    speed: 11
+    damage: 8
+	lifetime: 30
+    width: 2
+    height: 4
+	frontColor: 87ceeb
+	backColor: c0ecef
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: shootBig2
+	despawnEffect: shootBig
+    ammoMultiplier: 4
+	pierce: false
+	status: freezing
+	statusDuration: 240
+	sprite: bullet
+	shrinkY: 1
+  }
+  titanium: {
+    type: BasicBulletType
+    speed: 11
+    damage: 8
+	lifetime: 30
+    width: 2
+    height: 4
+	frontColor: 66aaff
+	backColor: 207cef
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: shootBig2
+	despawnEffect: shootBig
+    ammoMultiplier: 4
+	pierce: false
+	knockback: 3
+	sprite: diamond-ore-diamondbullet
+	shrinkY: 1
+  }
+  silicon: {
+    type: BasicBulletType
+    speed: 11
+    damage: 8
+	lifetime: 30
+    width: 2
+    height: 16
+	inaccuracy: 5
+	frontColor: aaaaaa
+	backColor: 666666
+    shootEffect: shootSmall
+    smokeEffect: shootSmallSmoke
+	hitEffect: shootBig2
+	despawnEffect: shootSmall
+    ammoMultiplier: 5
+	pierce: false
+	sprite: shell
+	shrinkY: 1
+	homingPower: 1
+	homingRange: 12
+	knockback: 0.125
+  }
+  metaglass: {
+    type: BasicBulletType
+    speed: 11
+    damage: 20
+	lifetime: 30
+    width: 1
+    height: 12
+	inaccuracy: 5
+	frontColor: ffffff
+	backColor: 666666
+    shootEffect: shootSmall
+    smokeEffect: lancerLaserShoot
+	hitEffect: shootBig2
+	despawnEffect: shootSmall
+    ammoMultiplier: 2
+    reloadMultiplier: 0.35
+	pierce: false
+	sprite: diamond-ore-diamondbullet
+	shrinkY: 1
+	fragBullets: 4
+	knockback: 1.25
+	fragVelocityMin: 3
+	fragVelocityMax: 6
+	fragBullet: {
+      type: BasicBulletType
+      damage: 6
+	  lifetime: 10
+      width: 1
+      height: 8
+      collidesTiles: false
+	  frontColor: ffffff
+	  backColor: ffffff
+      shootEffect: none
+      smokeEffect: none
+	  hitEffect: none
+	  despawnEffect: none
+	  pierce: false
+	  sprite: diamond-ore-diamondshell
+	  shrinkY: 0.879
+	  knockback: 1.25
+    }
+  }
+  ancient-scrap: {
+    type: BasicBulletType
+    speed: 11
+    damage: 20
+	lifetime: 30
+    width: 1
+    height: 16
+	inaccuracy: 9
+	frontColor: 69501c
+	backColor: ceb404
+    shootEffect: shootSmall
+    smokeEffect: lancerLaserShoot
+	hitEffect: shootBig2
+	despawnEffect: shootSmall
+    ammoMultiplier: 1
+    reloadMultiplier: 0.25
+	pierce: false
+	sprite: diamond-ore-diamondbullet
+	shrinkY: 1
+	fragBullets: 7
+	knockback: 1.25
+	fragVelocityMin: 5
+	fragVelocityMax: 12
+	fragBullet: {
+      type: BasicBulletType
+      damage: 10
+	  lifetime: 10
+      width: 1
+      height: 12
+	  frontColor: 69501c
+	  backColor: ce8404
+      shootEffect: none
+      smokeEffect: none
+	  hitEffect: none
+	  despawnEffect: none
+	  pierce: true
+	  pierceBuilding: true
+	  pierceCap: 3
+	  sprite: diamond-ore-diamondshell
+	  shrinkY: 0.875
+	  knockback: 6
+    }
+  }
+  blast-compound: {
+    type: MissileBulletType
+    speed: 6
+    drag: 0.006
+    damage: 10
+	lifetime: 70
+    width: 2
+    height: 4
+	inaccuracy: 5
+	frontColor: dd0000
+	backColor: c85c51
+	trailColor: ff795e
+    shootEffect: shootBigSmoke2
+    smokeEffect: shootSmallSmoke
+	hitEffect: blastExplosion
+	despawnEffect: blastExplosion
+    ammoMultiplier: 2
+    reloadMultiplier: 0.75
+	pierce: false
+	sprite: diamond-ore-diamondmissile
+	shrinkY: 0
+	splashDamage: 25
+	homingPower: 0.07
+	homingRange: 32
+	splashDamageRadius: 12
+  }
+  surge-alloy: {
+    type: MissileBulletType
+    speed: 6
+    drag: 0.006
+    damage: 12
+	lifetime: 70
+    width: 3
+    height: 6
+	inaccuracy: 7.5
+	frontColor: ddaa00
+	hitColor: ddaa00
+	backColor: c8c551
+	trailColor: ffaa5e
+    shootEffect: shootBigSmoke2
+    smokeEffect: shootSmallSmoke
+	hitEffect: blastExplosion
+	hitSound: spark
+	despawnEffect: blastExplosion
+    ammoMultiplier: 1
+    reloadMultiplier: 0.65
+	pierce: false
+	sprite: missile
+	shrinkY: 0
+	splashDamage: 25
+	homingPower: 0.09
+	homingRange: 32
+	status: shocked
+	statusDuration: 20
+	splashDamageRadius: 12
+	lightningLength: 9
+	lightningLengthRand: 9
+	lightning: 6
+  }
+  ancient-alloy: {
+    type: MissileBulletType
+    speed: 9
+    drag: 0.012
+    damage: 18
+	lifetime: 70
+    width: 3
+    height: 6
+	inaccuracy: 10
+	frontColor: ffff00
+	hitColor: ffff00
+	backColor: c85c51
+	trailColor: ffee77
+    shootEffect: shootBigSmoke2
+    smokeEffect: shootSmallSmoke
+	hitEffect: plasticExplosionFlak
+	hitSound: spark
+	despawnEffect: blastExplosion
+    ammoMultiplier: 1
+    reloadMultiplier: 0.55
+	pierce: false
+	sprite: diamond-ore-diamondmissile
+	shrinkY: 0
+	splashDamage: 35
+	homingPower: 0.117
+	homingRange: 48
+	status: shocked
+	statusDuration: 20
+	splashDamageRadius: 20
+	lightningLength: 18
+	lightningLengthRand: 18
+	lightning: 11
+  }
+}
+requirements: [
+  lead/350
+  silicon/200
+  graphite/55
+  titanium/55
+  surge-alloy/45
+  ancient-alloy/65
+]
+category: turret
+research: ancient-shotgun

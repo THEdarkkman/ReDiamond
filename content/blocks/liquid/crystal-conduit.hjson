@@ -1,0 +1,17 @@
+type: Conduit
+health: 500
+name: Crystal Conduit
+solid: true
+floating: true
+placeableLiquid: true
+liquidCapacity: 8
+liquidPressure: 20
+description: Moves liquids forward. Transports even faster but has a smaller capacity.
+requirements: [
+  metaglass/2
+  silicon/2
+  graphite/2
+  diamond/2
+]
+category: liquid
+research: reinforced-liquid-tank

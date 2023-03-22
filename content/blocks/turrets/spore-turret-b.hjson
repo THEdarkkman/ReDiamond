@@ -1,0 +1,108 @@
+//type: DoubleTurret
+name: Spore Turret
+description: Spore Turret
+health: 1600
+size: 2
+reloadTime: 180
+range: 200
+ammoUseEffect: smoke
+maxAmmo: 100
+inaccuracy: 24
+rotateSpeed: 9
+buildVisibility: editorOnly
+layer: turret
+layer2: block
+outlineIcon: false
+expanded: true
+shots: 4
+ammoTypes: {
+  spore-pod: {
+    type: MissileBulletType
+    speed: 6
+	drag: 0.0045
+    damage: 25
+	lifetime: 240
+    width: 12
+    height: 14
+	frontColor: 995D9A
+	backColor: 7C4B80
+	trailColor: 6B4474
+    shootEffect: shootBig
+    smokeEffect: shootSmallSmoke
+	splashDamage: 75
+	splashDamageRadius: 24
+	shrinkY: 0
+	hitEffect: mineBig
+    ammoMultiplier: 4
+	pierce: false
+	sprite: shell
+	homingPower: 0.01
+	homingRange: 240
+	fragBullets: 16
+	fragVelocityMin: 0.45
+	fragVelocityMax: 0.5
+	fragBullet: {
+      type: BasicBulletType
+	  shrinkY: 0
+      speed: 1
+	  lifetime: 18
+      damage: 4
+      width: 1
+      height: 4
+	  despawnEffect: none
+	  hitEffect: none
+	  frontColor: 995D9A
+	  backColor: 995D9A
+	  pierce: true
+	  status: corroded
+	  statusDuration: 1200
+	  sprite: diamond-ore-diamondbullet
+	fragBullets: 1
+	fragVelocityMin: 0.4
+	fragVelocityMax: 0.45
+	fragBullet: {
+      type: BasicBulletType
+      speed: 1
+	  lifetime: 18
+      damage: 4
+      width: 1
+	  shrinkY: 0
+      height: 4
+	  despawnEffect: none
+	  hitEffect: none
+	  frontColor: 7C4B80
+	  backColor: 7C4B80
+	  pierce: true
+	  status: corroded
+	  statusDuration: 1200
+	  sprite: diamond-ore-diamondbullet
+	fragBullets: 1
+	fragVelocityMin: 0.35
+	fragVelocityMax: 0.4
+	fragBullet: {
+      type: BasicBulletType
+      speed: 1
+	  lifetime: 18
+      damage: 4
+      width: 1
+      height: 4
+	  despawnEffect: none
+	  hitEffect: none
+	  shrinkY: 0
+	  frontColor: 6B4474
+	  backColor: 6B4474
+	  pierce: true
+	  status: corroded
+	  statusDuration: 1200
+	  sprite: diamond-ore-diamondbullet
+	  }
+	  }
+    }
+  }
+}
+requirements: [
+  silicon/125
+  titanium/125
+]
+category: turret
+//research: swarmer

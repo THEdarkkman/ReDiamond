@@ -1,0 +1,11 @@
+name: Diamond Wall
+description: Protects structures from enemy projectiles. Shatters when destroyed, damaging nearby enemies.
+//type: Wall
+health: 1500
+size: 1
+buildCostMultiplier: 2.5
+requirements: [
+  diamond/8
+]
+category: defense
+research: thorium-wall-large
