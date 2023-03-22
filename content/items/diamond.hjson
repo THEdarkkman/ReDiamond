@@ -4,7 +4,7 @@
     details: Pure crystallized carbon in an isotropic form. Nearly impossible to scratch, but vulnerable to blunt force.
     hardness: 5
     color: 88ccff
-    research: {
+    research:{
         parent: titanium
     }    
 }
