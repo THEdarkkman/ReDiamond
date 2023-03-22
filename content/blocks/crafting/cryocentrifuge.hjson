@@ -1,44 +1,46 @@
-//type: AttributeSmelter
-name: Cryofluid Centrifuge
-description: Uses a large amount of power to thoroughly mix pulverized titanium powder and lots of water together in order to quickly produce cryofluid.
-itemCapacity: 20
-liquidCapacity: 375
-health: 1280
-size: 4
-hasPower: true
-hasItems: true
-attribute: water
-boostScale: 0.4
-craftTime: 60
-updateEffect: freezing
-craftEffect: mineBig
-buildCostMultiplier: 0.5
-drawLiquidLight: true
-updateEffectChance: 0.25
-consumes: {
-  power: 7.75
-  items: {
-    items: [
-      titanium/3
-    ]
+{
+  type: GenericCrafter
+  name: Cryofluid Centrifuge
+  description: Uses a large amount of power to thoroughly mix pulverized titanium powder and lots of water together in order to quickly produce cryofluid.
+  itemCapacity: 20
+  liquidCapacity: 375
+  health: 1280
+  size: 4
+  hasPower: true
+  hasItems: true
+  attribute: water
+  boostScale: 0.4
+  craftTime: 60
+  updateEffect: freezing
+  craftEffect: mineBig
+  buildCostMultiplier: 0.5
+  drawLiquidLight: true
+  updateEffectChance: 0.25
+  consumes: {
+    power: 7.75
+    items: {
+      items: [
+        titanium/3
+      ]
+    }
+    liquid: {
+      liquid: water
+      amount: 1.25
+    }
   }
-  liquid: {
-    liquid: water
-    amount: 1.25
-  }
+  requirements: [
+    lead/300
+    graphite/175
+    metaglass/150
+    silicon/150
+    thorium/150
+    cryogem/500
+  ]
+  category: crafting
+  research: blast-furnace
+  loopSound: respawning
+  loopSoundVolume: 1.15
+  ambientSound: machine
+  ambientSoundVolume: 0.35
+  outputLiquid: cryofluid/75
 }
-requirements: [
-  lead/300
-  graphite/175
-  metaglass/150
-  silicon/150
-  thorium/150
-  cryogem/500
-]
-category: crafting
-research: blast-furnace
-loopSound: respawning
-loopSoundVolume: 1.15
-ambientSound: machine
-ambientSoundVolume: 0.35
-outputLiquid: cryofluid/75
