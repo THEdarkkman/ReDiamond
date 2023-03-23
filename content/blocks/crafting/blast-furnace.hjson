@@ -20,20 +20,20 @@
       items: [
         sand/15
         lead/15
-      blast-compound/4
+        blast-compound/4
       ]
     }
   }
   requirements: [
+    metaglass/900
     copper/600
     lead/300
     graphite/300
-    metaglass/900
     plastanium/150
     diamond/150
   ]
   category: crafting
-  research: surge-pyra-forge
+  research: kiln
   loopSound: machine
   loopSoundVolume: 0.95
   ambientSound: respawning
