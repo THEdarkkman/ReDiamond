@@ -31,7 +31,7 @@
     cryogem/100
   ]
   category: crafting
-  research: phase-string
+  research: cryogem
   loopSound: stringmake
   loopSoundVolume: 1.95
   ambientSound: stringmake

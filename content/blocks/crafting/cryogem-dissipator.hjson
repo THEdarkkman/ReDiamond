@@ -8,9 +8,9 @@
   hasPower: true
   hasLiquids: true
   hasItems: true
-  craftTime: 15
+  craftTime: 60
   updateEffect: smeltsmoke 
-  outputLiquid: cryofluid/60
+  outputLiquid: cryofluid/0.5
   consumes: {
     power: 4
     item: cryogem

@@ -9,23 +9,25 @@
   hasPower: true
   hasLiquids: true
   hasItems: true
-  craftTime: 30
+  craftTime: 60
   updateEffect: mineBig
   flameColor: ccffff
-  researchCostMultiplier: 2.1
+  researchCostMultiplier: 2
   consumes: {
     power: 2
     liquid: {
       liquid: cryofluid
-      amount: 2
+      amount: 0.5
     }
   }
   requirements: [
     lead/400
     graphite/175
+    titanium/150
     silicon/150
-    diamond/225
+    diamond/100
   ]
+  researchCostMultiplier: 1
   category: crafting
   research: diamond-synthesizer
   ambientSound: respawning

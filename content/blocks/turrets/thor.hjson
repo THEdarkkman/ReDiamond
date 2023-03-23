@@ -1,4 +1,4 @@
-//type: DoubleTurret
+type: ItemTurret
 name: Thor
 description: Fires large slow homing missiles.
 health: 1700
@@ -453,8 +453,6 @@ ammoTypes: {
 	splashDamage: 600
 	splashDamageRadius: 100
 	shrinkY: 0
-	hitEffect: impactShockwave
-	despawnEffect: impactShockwave
     ammoMultiplier: 1
 	reloadMultiplier: 0.125
 	pierce: false
