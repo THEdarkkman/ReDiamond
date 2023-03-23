@@ -16,7 +16,6 @@
   boostScale: 0.05
   maxHeatBoost: 2
   updateEffectChance: 0.15
-  outputLiquid: corrupt-water/60
   consumes: {
     power: 14
     items: {
@@ -29,6 +28,7 @@
       amount: 1
     }
   }
+  outputLiquid: corrupt-water/60
   requirements: [
     copper/600
     titanium/300

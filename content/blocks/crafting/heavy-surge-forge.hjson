@@ -32,7 +32,7 @@
     cryogem/15
   ]
   category: crafting
-  research: diamond-synthesizer
+  research: surge-smelter
   loopSound: machine
   loopSoundVolume: 0.95
   ambientSound: respawning

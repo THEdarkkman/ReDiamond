@@ -26,7 +26,7 @@
     diamond/15
   ]
   category: crafting
-  research: alloy-smelter
+  research: pyratite-mixer
   loopSound: respawning
   loopSoundVolume: 0.95
   ambientSound: respawning

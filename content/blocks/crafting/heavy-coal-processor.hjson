@@ -1,7 +1,7 @@
 {
   type: GenericCrafter
   name: Heavy Coal Processor
-  description: Solidifies oil into chunks of coal.
+  description: Solidifies oil more efficently into coal chunks at the cost of more power.
   itemCapacity: 30
   liquidCapacity: 150
   health: 1200
@@ -19,6 +19,7 @@
       amount: 0.12
     }
   }
+  outputItem: coal/8
   requirements: [
     lead/200
     graphite/100
@@ -28,10 +29,9 @@
     cryogem/5
   ]
   category: crafting
-  research: diamond-synthesizer
+  research: coal-centrifuge
   ambientSound: respawning
   ambientSoundVolume: 0.5
   loopSound: machine
   loopSoundVolume: 1.05
-  outputItem: coal/6
 }

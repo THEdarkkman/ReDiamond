@@ -26,6 +26,7 @@
       amount: 0.03333333333
     }
   }
+  outputItem: dark-spore-pod/1
   requirements: [
     copper/455
     metaglass/130
@@ -40,5 +41,4 @@
   loopSoundVolume: 1.45
   ambientSound: machine
   ambientSoundVolume: 0.125
-  outputItem: dark-spore-pod/1
 }
