@@ -31,4 +31,27 @@
   category: production
   research: cultivator
   researchCostMultiplier: 1.5
+  drawer: {
+   "type": "DrawMulti",
+   "drawers": [
+      {
+          "type": "DrawDefault"
+      },
+      {
+         "type": "DrawLiquidTile",
+         "drawLiquid": "water"
+      },
+      {
+           "type": "DrawCultivator"
+      },
+      {
+          "type": "DrawRegion",
+          "suffix": "-middle"
+      },
+      {
+          "type": "DrawRegion",
+          "suffix": "-top"
+      }
+   ]
+  }
 }
