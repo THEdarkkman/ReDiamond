@@ -4,16 +4,15 @@
 	description: Mows down ground enemies with piercing projectiles.
 	health: 1700
 	size: 3
-	reloadTime: 3
+	reload: 3
 	range: 240
-	coolantMultiplier: 3
 	ammoUseEffect: casing3
 	maxAmmo: 200
-	coolantUsage: 0.2345
 	inaccuracy: 8
 	xRand: 2
 	rotateSpeed: 3
 	shootSound: lokiShoot
+	shootSoundVolume: 0.1
 	outlineIcon: false
 	expanded: true
 	targetAir: false
@@ -324,10 +323,10 @@
 	}
 	requirements: [
 	lead/400
-	titanium/125
-	thorium/225
-	phase-fabric/250
 	diamond/300
+	phase-fabric/250
+	thorium/225
+	titanium/125
 	]
 	category: turret
 	research: ripple

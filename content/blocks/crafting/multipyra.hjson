@@ -7,7 +7,7 @@
   size: 3
   hasPower: true
   hasItems: true
-  craftTime: 40
+  craftTime: 48
   updateEffect: mine
   consumes: {
     power: 1.65
@@ -19,6 +19,7 @@
       ]
     }
   }
+  outputItem: pyratite/4
   requirements: [
     copper/200
     lead/130
@@ -31,5 +32,4 @@
   loopSoundVolume: 0.95
   ambientSound: respawning
   ambientSoundVolume: 0.5
-  outputItem: pyratite/3
   }

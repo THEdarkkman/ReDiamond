@@ -5,7 +5,7 @@
   details: *NOT WORKING FOR NOW* Ultimate plasma cannon of ancient origin.
   health: 32000
   size: 4
-  reloadTime: 600
+  reload: 600
   range: 800
   coolantMultiplier: 7
   liquidCapacity: 40
@@ -14,7 +14,7 @@
   rotateSpeed: 1
   cooldown: 0.003333
   ammoTypes: {
-    copper: {
+    surge-alloy: {
       type: BasicBulletType
       speed: 9
       damage: 32
@@ -25,7 +25,6 @@
       shootEffect: shootSmall
       smokeEffect: shootSmallSmoke
     hitEffect: hitLancer
-      ammoMultiplier: 6
     shrinkY: 0
     pierce: true
     sprite: diamond-ore-diamondbullet
