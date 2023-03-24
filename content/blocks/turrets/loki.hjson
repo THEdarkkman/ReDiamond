@@ -4,18 +4,20 @@
 	description: Mows down ground enemies with piercing projectiles.
 	health: 1700
 	size: 3
-	reload: 3
+	reload: 6
 	range: 240
-	ammoUseEffect: casing3
 	maxAmmo: 200
 	inaccuracy: 8
 	xRand: 2
 	rotateSpeed: 3
-	shootSound: lokiShoot
-	shootSoundVolume: 0.1
-	outlineIcon: false
 	expanded: true
 	targetAir: false
+	shoot: {
+		type: ShootAlternate
+		shots: 4
+		barrels: 3
+		shotDelay: 10
+	}
 	ammoTypes: {
 	copper: {
 		type: BasicBulletType
@@ -330,4 +332,8 @@
 	]
 	category: turret
 	research: ripple
+	ammoUseEffect: casing3
+	shootSound: lokiShoot
+	shootSoundVolume: 0.1
+	outlineIcon: false
 }

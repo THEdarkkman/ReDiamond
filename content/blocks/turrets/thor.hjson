@@ -5,18 +5,18 @@
 	health: 1700
 	size: 3
 	outlineIcon: false
-	alternate: true
 	reload: 100
 	shoot:{
-		shots: 2
+		type: ShootAlternate
+		shots: 1
+		barrels: 2		
+		spread: 16
 	}
 	range: 600
 	ammoUseEffect: casing3
 	coolantMultiplier: 8
 	coolantUsage: 0.5
-	spread: 16
 	maxAmmo: 2
-	inaccuracy: 0
 	rotateSpeed: 2
 	cooldown: 0.0125
 	shootSound: thorShoot
